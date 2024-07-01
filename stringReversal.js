@@ -34,6 +34,17 @@ function reverseString(str) {
   return reversedStr;
 }
 
+//alternative solution with "for of" loop
+function reverseString(str) {
+  //variable to hold new string
+  let reversedstr = "";   
+  for (let letter of str) {
+    //add each letter to reversed variable starting at the end of str
+    reversed = letter + reversed; 
+  }
+  return reversed;
+}
+
 //reverse string using built in methods
 function reverseString(str) {
   //split str to array. reverse and join back to string
